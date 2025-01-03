@@ -7,14 +7,35 @@
     <title>แนะนำสถานที่ท่องเที่ยวในจังหวัดจันทบุรี</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .carousel-item img {
+            height: 60vh;
+            object-fit: cover;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .hero-section {
+            background-color: #f8f9fa;
+        }
+        .footer-links a {
+            color: #6c757d;
+            text-decoration: none;
+        }
+        .footer-links a:hover {
+            color: #495057;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">จันทบุรีเที่ยว</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">จันทบุรี</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -32,7 +53,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div id="heroCarousel" class="carousel slide hero-section" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="images/chan1.jpg" class="d-block w-100" alt="...">
@@ -68,10 +89,11 @@
 
     <!-- Grid Section -->
     <div class="container py-5">
+        <h2 class="text-center mb-4">สถานที่ท่องเที่ยวแนะนำ</h2>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
             <!-- Card 1 -->
             <div class="col">
-                <div class="card h-100">
+                <div class="card shadow-sm h-100">
                     <img src="images/chan2.jpg" class="card-img-top" alt="สถานที่ท่องเที่ยว 1">
                     <div class="card-body">
                         <h5 class="card-title">จุดชมวิวเนินนางพญา</h5>
@@ -81,7 +103,7 @@
             </div>
             <!-- Card 2 -->
             <div class="col">
-                <div class="card h-100">
+                <div class="card shadow-sm h-100">
                     <img src="images/chan6.jpg" class="card-img-top" alt="สถานที่ท่องเที่ยว 2">
                     <div class="card-body">
                         <h5 class="card-title">เจดีย์กลางน้ำ บ้านหัวแหลม</h5>
@@ -91,7 +113,7 @@
             </div>
             <!-- Card 3 -->
             <div class="col">
-                <div class="card h-100">
+                <div class="card shadow-sm h-100">
                     <img src="images/chan3.jpg" class="card-img-top" alt="สถานที่ท่องเที่ยว 3">
                     <div class="card-body">
                         <h5 class="card-title">อาสนวิหารพระนางมารีอาปฏิสนธินิรมล</h5>
@@ -101,7 +123,7 @@
             </div>
             <!-- Card 4 -->
             <div class="col">
-                <div class="card h-100">
+                <div class="card shadow-sm h-100">
                     <img src="images/chan5.jpg" class="card-img-top" alt="สถานที่ท่องเที่ยว 4">
                     <div class="card-body">
                         <h5 class="card-title">หาดเจ้าหลาว</h5>
@@ -111,7 +133,7 @@
             </div>
             <!-- Card 5 -->
             <div class="col">
-                <div class="card h-100">
+                <div class="card shadow-sm h-100">
                     <img src="images/chan4.jpg" class="card-img-top" alt="สถานที่ท่องเที่ยว 5">
                     <div class="card-body">
                         <h5 class="card-title">ชุมชนริมน้ำจันทบูร</h5>
@@ -161,7 +183,7 @@
     <footer class="bg-light text-center py-3">
         <div class="container">
             <p>&copy; 2024 แนะนำสถานที่ท่องเที่ยวในจังหวัดจันทบุรี</p>
-            <div>
+            <div class="footer-links">
                 <a href="#" class="me-2">Facebook</a>
                 <a href="#" class="me-2">Instagram</a>
                 <a href="#">Twitter</a>
